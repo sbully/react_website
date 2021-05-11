@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from '../button/Button';
+import { Button } from '../../components';
 import './HeroSection.css';
 import '../../App.css';
-import SampleVideo from '../../asset/videos/video-2.mp4';
+import SampleVideo from '../../assets/videos/video-1.mp4';
 
 function HeroSection() {
   return (

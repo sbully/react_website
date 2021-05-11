@@ -1,12 +1,13 @@
 import './App.css';
-import Navbar from './components/navbar/NavBar';
+import { Navbar } from './components/';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from 'react-router-dom';
-import Home from './page/Home';
+
+import { Home, Products, Services, SignUp } from './page/';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
+          <Route path='/products' exact component={Products} />
+          <Route path='/services' exact component={Services} />
+          <Route path='/sign-up' exact component={SignUp} />
         </Switch>
       </Router>
     </>
